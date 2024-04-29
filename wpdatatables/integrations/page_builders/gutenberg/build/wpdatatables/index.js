@@ -19,7 +19,7 @@
         tables = []
     }
 
-    // Registering the Block for catalog shortcode
+    // Registering the Block for wpDataTables shortcode
     wp.blocks.registerBlockType('wpdatatables/wpdatatables-gutenberg-block', {
         title: wpdatatables.title,
         description: wpdatatables.description,
@@ -109,7 +109,6 @@
             function getShortCode(props, attributes) {
                 var short_code = '';
                 var export_file_name = '';
-
 
                 if (attributes.export_file_name)  {
                     export_file_name = ' export_file_name=' + attributes.export_file_name;

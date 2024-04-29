@@ -19,76 +19,30 @@
         charts = []
     }
 
-    // Registering the Block for catalog shortcode
+    // Registering the Block for wpDataCharts shortcode
     wp.blocks.registerBlockType('wpdatatables/wpdatacharts-gutenberg-block', {
         title: wpdatacharts.title,
         description: wpdatacharts.description,
-        icon: el('svg', {
-                width: '45px',
-                height: '50px',
-                viewBox: '0 0 45 50'
-            },
-
+        icon: el('svg', {width: '45', height: '50', viewBox: '0 0 45 50'},
             el('rect', {
-
-                style: {
-                    fill: '#0089FF',
-                    x: '0px',
-                    y: '0px',
-                    width: '9px',
-                    height: '50px'
-                },
-
-                transform: 'translate(3.000000, 0.000000)',
-
-
-            }),
-
-            el('rect', {
-
-                style: {
-                    fill: '#56D2FF',
-                    x: '12px',
-                    y: '11px',
-                    width: '9px',
-                    height: '39px'
-                },
-
-                transform: 'translate(3.000000, 0.000000)',
-
-
-            }),
-
-            el('rect', {
-
-                style: {
-                    fill: '#00A3FF',
-                    x: '24px',
-                    y: '21px',
-                    width: '9px',
-                    height: '29px'
-                },
-
+                style: {fill: '#0089FF', x: '0px', y: '0px', width: '9px', height: '50px'},
                 transform: 'translate(3.000000, 0.000000)',
 
             }),
-
             el('rect', {
-
-                style: {
-                    fill: '#061972',
-                    x: '36px',
-                    y: '29px',
-                    width: '9px',
-                    height: '21px'
-                },
-
+                style: {fill: '#56D2FF', x: '12px', y: '11px', width: '9px', height: '39px'},
                 transform: 'translate(3.000000, 0.000000)',
 
+            }),
+            el('rect', {
+                style: {fill: '#00A3FF', x: '24px', y: '21px', width: '9px', height: '29px'},
+                transform: 'translate(3.000000, 0.000000)',
+            }),
+            el('rect', {
+                style: {fill: '#061972', x: '36px', y: '29px', width: '9px', height: '21px'},
+                transform: 'translate(3.000000, 0.000000)',
             })
-
         ),
-
         category: 'wpdatatables-blocks',
         keywords: [
             'wpdatacharts',
@@ -167,18 +121,8 @@
                     }
                 }));
             } else {
-                inspectorElements.push(el('p', {
-                    style: {
-                        'margin-bottom': '1em'
-                    }
-                }, 'Please create wpdatachart first. You can check how to do that on link below.'));
-                inspectorElements.push(el('a', {
-                    href: 'https://wpdatatables.com/documentation/wpdatacharts/creating-charts-wordpress-wpdatachart-wizard/',
-                    target: '_blank',
-                    style: {
-                        'margin-bottom': '1em'
-                    }
-                }, 'How to create chart in wpdatatables?'));
+                inspectorElements.push(el('p', {style: {'margin-bottom': '1em'}}, 'Please create wpdatachart first. You can check how to do that on link below.'));
+                inspectorElements.push(el('a', {href:'https://wpdatatables.com/documentation/wpdatacharts/creating-charts-wordpress-wpdatachart-wizard/', target:'_blank', style: {'margin-bottom': '1em'}}, 'How to create chart in wpdatatables?'));
             }
 
             return [

@@ -342,8 +342,8 @@ $tableChartsCount = (int)WDTTools::getTablesCount('chart');
                         <div class="alert alert-info m-b-0" role="alert">
                             <i class="wpdt-icon-info-circle-full"></i>
                             <ul>
-                                <li><b>Improvement:</b> Added an Activation tab to Plugin settings.</li>
-                                <li><b>Improvement:</b> Improved newsletter subscription.</li>
+                                <li>Compatibility with WordPres 6.7 version approved.</li>
+                                <li>Updated page Lite vs Premium.</li>
                                 <li>Other small bug fixes and stability improvements</li>
                             </ul>
                         </div>
@@ -374,28 +374,34 @@ $tableChartsCount = (int)WDTTools::getTablesCount('chart');
                         </p>
                         <div class="wdt-premium-features">
                             <p class="wpdt-font">
-                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('Fixed headers', 'wpdatatables'); ?>
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('WooCommerce Integration', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
-                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('Fixed columns', 'wpdatatables'); ?>
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('WP Post Builder', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
-                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('Transform value', 'wpdatatables'); ?>
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: #f43e3e;font-weight: bold;">NEW! </span><?php esc_html_e('Fixed headers', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
-                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('Highcharts Stock', 'wpdatatables'); ?>
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: #f43e3e;font-weight: bold;">NEW! </span><?php esc_html_e('Fixed columns', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
-                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('Folders/Categories for tables', 'wpdatatables'); ?>
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: #f43e3e;font-weight: bold;">NEW! </span><?php esc_html_e('Transform value', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
-                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('Folders/Categories for charts', 'wpdatatables'); ?>
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: #f43e3e;font-weight: bold;">NEW! </span><?php esc_html_e('Highcharts Stock', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
-                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('GeoCharts', 'wpdatatables'); ?>
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: #f43e3e;font-weight: bold;">NEW! </span><?php esc_html_e('Folders/Categories for tables', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
-                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('Hidden (dynamic) columns', 'wpdatatables'); ?>
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: #f43e3e;font-weight: bold;">NEW! </span><?php esc_html_e('Folders/Categories for charts', 'wpdatatables'); ?>
+                            </p>
+                            <p class="wpdt-font">
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: #f43e3e;font-weight: bold;">NEW! </span><?php esc_html_e('GeoCharts', 'wpdatatables'); ?>
+                            </p>
+                            <p class="wpdt-font">
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: #f43e3e;font-weight: bold;">NEW! </span><?php esc_html_e('Hidden (dynamic) columns', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
                                 <i class="wpdt-icon-check m-r-8"></i><?php esc_html_e('Create a table manually', 'wpdatatables'); ?>
@@ -431,7 +437,7 @@ $tableChartsCount = (int)WDTTools::getTablesCount('chart');
                                 <i class="wpdt-icon-check m-r-8"></i><?php esc_html_e('Pre-filtering tables through URL', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
-                                <i class="wpdt-icon-check m-r-8"></i><span style="color: #ef8137;font-weight: bold;">NEW! </span><?php esc_html_e('Table Customization', 'wpdatatables'); ?>
+                                <i class="wpdt-icon-check m-r-8"></i><?php esc_html_e('Table Customization', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
                                 <i class="wpdt-icon-check m-r-8"></i><?php esc_html_e('Server-side processing', 'wpdatatables'); ?>
@@ -446,7 +452,7 @@ $tableChartsCount = (int)WDTTools::getTablesCount('chart');
                                 <i class="wpdt-icon-check m-r-8"></i><?php esc_html_e('Excel-like editing', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
-                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('Creating charts with ApexCharts', 'wpdatatables'); ?>
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: #f43e3e;font-weight: bold;">NEW! </span><?php esc_html_e('Creating charts with ApexCharts', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
                                 <i class="wpdt-icon-check m-r-8"></i><?php esc_html_e('Creating charts with Highcharts', 'wpdatatables'); ?>
@@ -467,7 +473,7 @@ $tableChartsCount = (int)WDTTools::getTablesCount('chart');
                                 <i class="wpdt-icon-check m-r-8"></i><?php esc_html_e('Formula columns', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
-                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('Rotate column headers', 'wpdatatables'); ?>
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: #f43e3e;font-weight: bold;">NEW! </span><?php esc_html_e('Rotate column headers', 'wpdatatables'); ?>
                             </p>
                             <p class="wpdt-font">
                                 <i class="wpdt-icon-check m-r-8"></i><?php esc_html_e('Placeholders', 'wpdatatables'); ?>

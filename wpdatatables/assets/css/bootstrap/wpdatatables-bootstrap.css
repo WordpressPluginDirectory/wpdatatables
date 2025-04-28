@@ -6819,7 +6819,7 @@ select.input-group-lg > .input-group-btn > .btn {
 
 .wpdt-c .close {
     float: right;
-    font-size: 20px;
+    font-size: 20.5px;
     font-weight: bold;
     line-height: 1;
     color: #000;
@@ -13749,6 +13749,19 @@ input:focus {
 .wpdt-c .wpdt-custom-center-flex{
     display: flex;
     justify-content: center;
+}
+.wpdt-c .wpdt-placeholder-images img {
+        width: 30%;
+}
+.wpdt-c .wpdt-advanced-table-settings-image img {
+        width: 50%;
+}
+
+@media (min-width: 1700px) {
+    .wpdt-c .wpdt-advanced-table-settings-image img,
+    .wpdt-c .wpdt-placeholder-images img {
+        width: auto;
+    }
 }
 .wpDataTables .dataTables_length select.selectpicker {
     display: inline-block !important;

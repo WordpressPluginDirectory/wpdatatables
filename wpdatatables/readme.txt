@@ -4,9 +4,9 @@ Author URI: https://tmsproducts.io
 Plugin URI: https://wpdatatables.com/
 Tags: table, table builder, datatable, csv, chart
 Requires at least: 4.0
-Tested up to: 6.8.2
+Tested up to: 6.8.3
 Requires PHP: 7.4
-Stable tag: 6.3.3.7
+Stable tag: 6.3.3.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -440,6 +440,24 @@ This can be changed from the “Number format” drop-down menu in the wpDataTab
 13. Google chart settings
 
 == Changelog ==
+= 6.3.3.11 =
+* Minor CSS fixes.
+Other small bug fixes and stability improvements.
+
+= 6.3.3.10 =
+* Integration with IvyForms plugin for creating tables from form submissions.
+* Upgraded PHPSpreadsheet library to a security-checked version.
+Other small bug fixes and stability improvements.
+
+= 6.3.3.9 =
+* Added a new hook wpdatatables_after_save_table triggered upon saving Simple tables.
+* Compatibility with WordPress version 6.8.3 approved.
+Other small bug fixes and stability improvements.
+
+= 6.3.3.8 =
+* Minor CSS fixes.
+Other small bug fixes and stability improvements.
+
 = 6.3.3.7 =
 * Improved tab hashes on table settings page.
 Other small bug fixes and stability improvements.

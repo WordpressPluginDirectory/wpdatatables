@@ -3403,7 +3403,7 @@
 }
 
 .wpdt-c .has-feedback .form-control {
-    padding-right: 43.5px;
+    padding-right: 44px;
 }
 
 .wpdt-c .form-control-feedback {
@@ -5217,15 +5217,12 @@ select.input-group-lg > .input-group-btn > .btn {
 }
 
 .wpdt-c .navbar-form {
-    margin-left: -15px;
-    margin-right: -15px;
     padding: 10px 15px;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-    margin-top: 7.5px;
-    margin-bottom: 7.5px;
+    margin: 8px -15px;
 }
 
 @media (min-width: 768px) {

@@ -343,7 +343,7 @@ $tableChartsCount = (int)WDTTools::getTablesCount('chart');
                         <div class="alert alert-info m-b-0" role="alert">
                             <i class="wpdt-icon-info-circle-full"></i>
                             <ul>
-                                <li>Minor CSS fixes.</li>
+                                <li>Minor CSS adjustments.</li>
                                 <li>Other small bug fixes and stability improvements.</li>
                             </ul>
                         </div>
@@ -373,6 +373,12 @@ $tableChartsCount = (int)WDTTools::getTablesCount('chart');
                             <?php esc_html_e('Get the most out of wpDataTables by upgrading to Premium and unlocking all of the powerful features.', 'wpdatatables'); ?>
                         </p>
                         <div class="wdt-premium-features">
+                            <p class="wpdt-font">
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('Custom Fields Integration for WP Posts Builder', 'wpdatatables'); ?>
+                            </p>
+                            <p class="wpdt-font">
+                                <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('Custom Fields Integration for WooCommerce', 'wpdatatables'); ?>
+                            </p>
                             <p class="wpdt-font">
                                 <i class="wpdt-icon-check m-r-8"></i><span style="color: red;font-weight: bold;">NEW! </span><?php esc_html_e('WooCommerce Integration', 'wpdatatables'); ?>
                             </p>

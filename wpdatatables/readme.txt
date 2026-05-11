@@ -4,9 +4,9 @@ Author URI: https://tmsproducts.io
 Plugin URI: https://wpdatatables.com/
 Tags: table, table builder, datatable, csv, chart
 Requires at least: 4.0
-Tested up to: 6.9.1
+Tested up to: 6.9.4
 Requires PHP: 7.4
-Stable tag: 6.5.0.1
+Stable tag: 6.5.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -424,8 +424,7 @@ Date format can be changed in wpDataTables Settings page using the “Date forma
 This can be changed from the “Number format” drop-down menu in the wpDataTables Settings page.
 
 = Where do I report security bugs found in this plugin? =
-
-Please report security bugs found in the source code of the wpDataTables plugin through the [Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/9e5fb453-4d67-4ae9-8d4b-2aeOblec5589). The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
+Please report security bugs found in the source code of the wpDataTables plugin through the [Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/9e5fb453-4d67-4ae9-8d4b-2ae0b1ec5589). The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
 
 == Screenshots ==
 1. New simple editor
@@ -443,6 +442,30 @@ Please report security bugs found in the source code of the wpDataTables plugin 
 13. Google chart settings
 
 == Changelog ==
+= 6.5.0.7 =
+* Added support for HTML, Rating, and Signature fileds for the Ivyforms integration.
+Other small bug fixes and stability improvements.
+
+= 6.5.0.6 =
+* Minor CSS adjustments.
+Other small bug fixes and stability improvements.
+
+= 6.5.0.5 =
+* Fixed issue with stored cross-site scripting via CSV/Excel data import.
+Other small bug fixes and stability improvements.
+
+= 6.5.0.4 =
+* Minor CSS fixes.
+Other small bug fixes and stability improvements.
+
+= 6.5.0.3 =
+* Compatibility with WordPress 6.9.4 approved.
+Other small bug fixes and stability improvements.
+
+= 6.5.0.2 =
+* Fixed vulnerability issue with Local File Inclusion (LFI).
+Other small bug fixes and stability improvements.
+
 = 6.5.0.1 =
 * Added wpDataTables capabilities for viewing tables and charts.
 Other small bug fixes and stability improvements.

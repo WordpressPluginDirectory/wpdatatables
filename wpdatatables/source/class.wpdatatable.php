@@ -525,15 +525,36 @@ class WPDataTable
         return $this->_verticalScroll;
     }
 
+    /**
+     * @throws WDTException
+     */
     public function setInterfaceLanguage($lang)
     {
         if (empty($lang)) {
             throw new WDTException('Incorrect language parameter!');
         }
-        if (!file_exists(WDT_ROOT_PATH . 'source/lang/' . $lang)) {
-            throw new WDTException('Language file not found');
+
+        // Security Fix: Prevent Path Traversal / LFI attacks (CVE-2026-28039)
+        // Remove any path traversal attempts and allow only valid filenames
+        $lang = basename($lang);
+
+        // Additional security: Only allow .inc.php extension
+        if (substr($lang, -8) !== '.inc.php') {
+            throw new WDTException('Invalid language file format!');
         }
-        $this->_interfaceLanguage = WDT_ROOT_PATH . 'source/lang/' . $lang;
+
+        // Build the safe path
+        $safePath = WDT_ROOT_PATH . 'source/lang/' . $lang;
+
+        // Verify the resolved path is still within the lang directory
+        $realPath = realpath($safePath);
+        $realLangDir = rtrim(realpath(WDT_ROOT_PATH . 'source/lang/'), DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR;
+
+        if ($realPath === false || strpos($realPath, $realLangDir) !== 0) {
+            throw new WDTException('Language file not found or path traversal detected!');
+        }
+
+        $this->_interfaceLanguage = $realPath;
     }
 
     public function getInterfaceLanguage()
